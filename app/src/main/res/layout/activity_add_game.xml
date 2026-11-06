@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar videojuego"
+            android:textColor="@color/primary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Completa la información del proyecto"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imgPortada"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="25dp"
+            android:background="#E2E2E2"
+            android:contentDescription="Portada del videojuego"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Seleccionar imagen" />
+
+        <EditText
+            android:id="@+id/etNombreJuego"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:hint="Nombre del videojuego"
+            android:inputType="textCapSentences"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/etAutores"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:hint="Autores o integrantes del equipo"
+            android:inputType="textCapSentences"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:hint="Descripción del videojuego"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/btnGuardarJuego"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/primary"
+            android:text="Guardar videojuego"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray"
+            android:text="Cancelar" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GameRating"
+            android:textColor="@color/primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de estudiantes"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/tvResumenEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargando estudiantes..."
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:id="@+id/btnImportarEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Importar estudiantes desde CSV"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnVolverEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al panel"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/primary" />
+
+    </LinearLayout>
+
+</ScrollView>
